@@ -1,0 +1,75 @@
+body{
+    transition: margin-left 300ms;
+}
+.menuSide{
+    width: 0px;
+    height: 100%;
+    background: #901A42;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    font-size: 18px;
+    overflow: hidden;
+    transition: all 300ms;
+}
+.namePage{
+    padding: 20px 30px;
+    margin-top: 10px;
+}
+
+.optionsMenu{
+    padding: 20px 30px;
+    position: absolute;
+    top: 80px;
+}
+.optionsMenu a{
+    color: #ffffffb2;
+    display: block;
+    position: relative;
+    transition: color 300ms;
+}
+
+.optionsMenu a:hover{
+    color: white;
+}
+
+.optionsMenu .option{
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+a.selected{
+    color: #fff;
+}
+.selected:before{
+    content: '';
+    width: 3px;
+    height: 80%;
+    background: white;
+    position: absolute;
+    top: 10%;
+    left: -30px;
+}
+
+/*Clases para usar en js*/
+
+.bodyMove{
+    margin-left: 250px;
+}
+
+.menuSideMove{
+    width: 250px;
+}
+
+@media screen and (max-width: 760px){
+    .bodyMove{
+        margin-left: 160px;
+    }
+    
+    .menuSideMove{
+        width: 160px;
+    }
+}
