@@ -1,0 +1,49 @@
+
+main{
+    padding: 50px;
+    padding-top: 100px;
+}
+.books{
+    display: grid;
+    list-style: none;
+    grid-template-columns: repeat(
+        auto-fill,
+        minmax(
+            190px,
+            1fr
+        )
+    );
+    gap: 100px;
+    padding-top: 60px;
+}
+
+.bookPoster{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+    -webkit-text-stroke: 2px black;
+    color: white;
+}
+.bookName{
+    color: white;
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+.bookAutor{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+/*js*/
+.filtro{
+    display: none;
+}
