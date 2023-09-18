@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../CSS/optionsMenu.css">
     <link rel="stylesheet" href="../CSS/booksGrid.css">
     <script src="../JS/unpkg.com_scrollreveal@4.0.9_dist_scrollreveal.js"></script>
+    
     <title>ViewBook</title>
     <link rel="shortcut icon" href="../Img/logoBook.png" type="image/x-icon">
 
@@ -17,20 +18,18 @@
     <section class="mainContainer">
     <header class="container">
         <nav class="leftMenu">
-            <!--boton menu izquierdo-->
+
             <div class="button">
                 <div class="material-symbols-outlined" style="font-size: 38px;;" id="btnOpen">
                     menu
                 </div>
             </div>
-            <!--titulo inzquierdo-->
+
             <a href="index.html" class="titulo"><h1 style="font-size: 24px;">ViewBook</h1></a>
         </nav>
 
-        <!--Barra de busqueda-->
         <div class="searchTool">
             <input type="search" placeholder="Buscar libro, autor, año.." class="searchInput" id="searchTool">
-                <!--Lupa-->
             <button type="submit" class="button">
                 <div class="material-symbols-outlined" >
                     search
@@ -38,8 +37,6 @@
             </button>
         </div>
     </header>
-
-    <!--Menu desplegable izquierdo-->
     <div class="menuSide" id="menuSide">
         <div class="namePage">
             <h4>ViewBook</h4>
@@ -52,19 +49,7 @@
                     <h4>Inicio</h4>
                 </div>
             </a>
-    
-            <a href="news.html">
-                <div class="option">
-                    <h4>Novedades</h4>
-                </div>
-            </a>
-    
-            <a href="bestRated.html">
-                <div class="option">
-                    <h4>Mejor valorados</h4>
-                </div>
-            </a>
-    
+     
             <a href="uploadBook.html">
                 <div class="option">
                     <h4>Sugerir un libro</h4>
@@ -74,135 +59,117 @@
         </div>
     </div>
 
-        <main>
+    <main>
             <h1 class="title" style="font-size: 35px;">Grilla</h1>
             <hr class="line" style=  
-                    "width:40%;
-                    height: 5px;
-                     margin: auto;
-                     background: white;
-                     border: solid 2px black;"
+                    "width: 50%;
+                    margin: auto;
+                    height: 4px;
+                    background: rgb(148, 57, 57);
+                    border: none;
+                    border-radius: 6px;"
             >
             <ul class="books">
 
                 <li class="book" id="book">
-                    <a href="../Html/booksPages/elDestapeNacionalPage.html">
-                        <img class="bookPoster" src="../Img/Books/elDestapeNacional.jpg" alt="El destape Nacional">
-                        <h5 class="bookName">El destape Nacional</h5>
-                    </a>
-                    <H6 class="bookAutor">José M. Ponce</H6>
-                    <h6 style="display: none;">2004</h6>
-                </li>
-
-                <li class="book" id="book">
-                    <a href="#">
+                    <a href="../Html/booksPages/carrie.html">
                         <img class="bookPoster" src="../Img/Books/carrie.jpg" alt="Carrie">
-                        <h5 class="bookName">Carrie</h5>
+                        <p class="bookName">Carrie</p>
                     </a>
                         <H6 class="bookAutor">Stephen King</H6>
-                        <h6 style="display: none;">1974</h6>
+                        <p style="display: none;">1974</p>
                 </li>
 
                 <li class="book" id="book">
-                    <a href="#">
+                    <a href="../Html/booksPages/cienAñosDeSoledad.html">
                         <img class="bookPoster" src="../Img/Books/CienAñosDeSoledad.jpg" alt="Cien años de soledad">
-                        <h5 class="bookName">Cien años de soledad</h5>
+                        <p class="bookName">Cien años de soledad</p>
                     </a>
-                        <H6 class="bookAutor">Gabriel Gárcia Marquez</H6>
-                        <h6 style="display: none;">1967</h6>
+                        <H6 class="bookAutor">Gabriel Garcia marquez</H6>
+                        <p style="display: none;">19g7</p>
                 </li>
 
+
                 <li class="book" id="book">
-                    <a href="#">
+                    <a href="../Html/booksPages/donQuijote.html">
                         <img class="bookPoster" src="../Img/Books/donQuijoteDeLaMancha.jpg" alt="Don Quijote de la mancha">
-                        <h5 class="bookName">Don Quijote de la mancha</h5>
+                        <p class="bookName">Don Quijote de la mancha</p>
                     </a>
-                        <H6 class="bookAutor">Miguel de Cervantes</H6>
-                        <h6 style="display: none;">1605</h6>
+                        <h6 class="bookAutor">Miguel de Cervantes</h6>
+                        <p style="display: none;">1605</p>
                 </li>
 
                 <li class="book" id="book">
-                    <a href="#">
+                    <a href="../Html/booksPages/elEspejoAfricano.html">
                         <img class="bookPoster" src="../Img/Books/ElEspejoAfricano.jpg" alt="El espejo Africano">
-                        <h5 class="bookName">El espejo Africano</h5>
+                        <p class="bookName">El espejo Africano</p>
                     </a>
                         <H6 class="bookAutor">Liliana Bodoc</H6>
-                        <h6 style="display: none;">2008</h6>
+                        <p style="display: none;">2008</p>
                 </li>
 
                 <li class="book" id="book">
-                    <a href="#">
+                    <a href="../Html/booksPages/unMundoFeliz.html">
                         <img class="bookPoster" src="../Img/Books/unMundoFeliz.jpg" alt="Un mundo feliz">
-                        <h5 class="bookName">Un mundo feliz</h5>
+                        <p class="bookName">Un mundo feliz</p>
                     </a>
                         <H6 class="bookAutor">Aldous Huxley</H6>
-                        <h6 style="display: none;">1932</h6>
+                        <p style="display: none;">1932</p>
                 </li>
 
                 <li class="book" id="book">
-                    <a href="#">
+                    <a href="../Html/booksPages/elMatadero.html">
                         <img class="bookPoster" src="../Img/Books/elMatadero.jpg" alt="El matadero">
-                        <h5 class="bookName">El matadero</h5>
+                        <p class="bookName">El matadero</p>
                     </a>
                         <H6 class="bookAutor">Esteban Echeverría</H6>
-                        <h6 style="display: none;">1871</h6>
+                        <p style="display: none;">1871</p>
                 </li>
 
                 <li class="book" id="book">
-                    <a href="#">
+                    <a href="../Html/booksPages/1984.html">
                         <img class="bookPoster" src="../Img/Books/1984.jpg" alt="1984">
-                        <h5 class="bookName">1984</h5>
+                        <p class="bookName">1984</p>
                     </a>
                         <H6 class="bookAutor">George Orwell</H6>
-                        <h6 style="display: none;">1949</h6>
+                        <p style="display: none;">1949</p>
                 </li>
 
                 <li class="book" id="book">
-                    <a href="#">
+                    <a href="../Html/booksPages/elPrincipito.html">
                         <img class="bookPoster" src="../Img/Books/elPrincipito.jpg" alt="El elPrincipito">
-                        <h5 class="bookName">El principito</h5>
+                        <p class="bookName">El principito</p>
                     </a>
                         <H6 class="bookAutor">Saint-Exupéry</H6>
-                        <h6 style="display: none;">1943</h6>
+                        <p style="display: none;">1943</p>
                 </li>
 
                 <li class="book" id="book">
-                    <a href="#">
-                        <img class="bookPoster" src="../Img/Books/elResplandor.jpg" alt="El resplandor">
-                        <h5 class="bookName">El resplandor</h5>
-                    </a>
-                        <H6 class="bookAutor">Stephen King</H6>
-                        <h6 style="display: none;">1977</h6>
-                </li>
-
-                <li class="book" id="book">
-                    <a href="#">
+                    <a href="../Html/booksPages/rayuela.html">
                         <img class="bookPoster" src="../Img/Books/Rayuela.jpg" alt="Rayuela">
-                        <h5 class="bookName">Rayuela</h5>
+                        <p class="bookName">Rayuela</p>
                     </a>
                         <H6 class="bookAutor">Julio Cortázar</H6>
-                        <h6 style="display: none;">1963</h6>
+                        <p style="display: none;">1963</p>
                 </li>
 
                 <li class="book" id="book">
-                    <a href="#">
+                    <a href="../Html/booksPages/mobyDick.html">
                         <img class="bookPoster" src="../Img/Books/mobyDick.jpg" alt="Moby Dick">
-                        <h5 class="bookName">Moby Dick</h5>
+                        <p class="bookName">Moby Dick</p>
                     </a>
                         <H6 class="bookAutor">Herman Melville</H6>
-                        <h6 style="display: none;">1851</h6>
+                        <p style="display: none;">1851</p>
                 </li>
             </ul>
-        </main>
+    </main>
 
-
-
-    </section>
+</section>
 
 
 
 <script src="../JS/scriptLeftMenu.js"></script>
 <script src="../JS/scriptLoad.js"></script>
 <script src="../JS/scriptSearch.js"></script>
-</ody>
+</body>
 </html>

@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 body{
     transition: margin-left 300ms;
+    font-family: 'Open Sans', sans-serif;
 }
 .menuSide{
     width: 0px;

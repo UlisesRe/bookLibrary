@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../CSS/navBar.css">
+    <link rel="stylesheet" href="../../CSS/optionsMenu.css">
+    <link rel="stylesheet" href="../../CSS/bookPage.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="../../JS/unpkg.com_scrollreveal@4.0.9_dist_scrollreveal.js"></script>
+    <title>1984</title>
+    <link rel="shortcut icon" href="../../Img/logoBook.png" type="image/x-icon">
+</head>
+
+<body id="body">
+
+    <header class="container">
+
+        <nav class="leftMenu">
+            <!--boton menu izquierdo-->
+            <div class="button">
+                <span class="material-symbols-outlined" style="font-size: 38px;;" id="btnOpen">
+                    menu
+                </span>
+            </div>
+            <!--titulo inzquierdo-->
+            <a href="../index.html" class="titulo">
+                <h1>ViewBook</h1>
+            </a>
+        </nav>
+
+
+
+    </header>
+    <!--Menu desplegable izquierdo-->
+
+    <div class="menuSide" id="menuSide">
+        <div class="namePage">
+            <h4>ViewBook</h4>
+        </div>
+
+        <div class="optionsMenu">
+
+            <a href="../index.html">
+                <div class="option">
+                    <h4>Inicio</h4>
+                </div>
+            </a>
+
+            <a href="../uploadBook.html">
+                <div class="option">
+                    <h4>Sugerir un libro</h4>
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+    <main>
+        <div>
+            <h1 class="title">1984</h1>
+            <hr class="line" style="width: 50%;
+            margin: auto;
+            height: 4px; 
+            
+            background: rgb(148, 57, 57); 
+            border: none; border-radius: 6px;
+            ">
+        </div>
+        <div class="content">
+            <div>
+                <img src="../../Img/Books/1984.jpg" alt="1984">
+            </div>
+
+
+
+            <p>1984 es la antiutopía o distopía más célebre de todas cuantas fueron
+                escritas durante la primera mitad del siglo XX. En ella, Orwell presenta un futuro en el
+                que una dictadura totalitaria interfiere hasta tal punto en la vida
+                privada de los ciudadanos que resulta imposible escapar a su control.</p>
+
+            <form method="POST" action="../../PHP/sendComment.php">
+                <section id="allForm">
+                    <div class="form">
+                        <h2>Dejanos tu opinion</h2>
+                        <br>
+                        <div class="formGroup">
+                            <label for="nombre" class="formLabel">Nombre</label>
+                            <br>
+                            <input type="text" class="formControl" name="nombre" id="nombre"
+                                placeholder="Escriba su nombre" style="width: 100%;">
+                        </div>
+                        <br>
+                        <div class="formGroup">
+
+                            <label for="comment" class="formLabel">Tu comentario</label>
+                            <textarea type="text" class="formControl" name="opinion" id="opinion" cols="30" rows="5"
+                                placeholder="Escriba su opinion(Max 250 char)..." maxlength="250"></textarea>
+                            <input readonly type="text" name="libro" value="1984"
+                                placeholder="1984" style="display: none;"></input>
+                        </div>
+                        <br>
+                        <input class="submit" type="submit" value="Enviar" >
+                    </div>
+                </section>
+
+            </form>
+        </div>
+    </main>
+
+
+    <script src="../../JS/scriptLeftMenu.js"></script>
+    <script src="../../JS/scriptLoad.js"></script>
+</body>
+
+</html>

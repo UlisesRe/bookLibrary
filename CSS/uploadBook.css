@@ -1,0 +1,33 @@
+
+main{
+padding-top: 100px;
+}
+.title{
+    text-align: center;
+    padding-bottom: 15px;
+    -webkit-text-stroke: 2px black;
+    color: white;
+}
+.content{
+    text-align: center;
+    padding-bottom: 15px;
+    color: white;
+
+}
+
+.formControl{    
+    width: 400px;
+    border-radius: 10px;
+    text-align: center;
+    resize:none;
+    display:inline;
+    margin: auto;
+}
+.submit{
+    border-radius: 15px;
+    font-size: 15px;
+    transition: all 300ms;
+}
+.submit:hover{
+    background-color: rgb(197, 113, 113);
+}

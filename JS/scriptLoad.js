@@ -25,3 +25,11 @@ window.sr = ScrollReveal();
     origin: 'right',
     distance: '30px',
 });
+
+window.sr = ScrollReveal();
+  sr.reveal('.content', {
+    duration: 4500,
+    origin: 'right',
+    distance: '30px',
+});
+

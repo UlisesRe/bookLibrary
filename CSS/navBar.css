@@ -16,7 +16,6 @@ body{
     z-index: 1000;
     position: fixed;
     width: 100%;
-    user-select: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -24,6 +23,7 @@ body{
     background-image: url(../Img/booksBanner.jpg);
     background-size: cover;
     background-position: center;
+    box-shadow: 100px #4b0e22 ;
 }
 
 .leftMenu{

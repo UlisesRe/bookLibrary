@@ -1,12 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 main{
-    padding: 50px;
-    padding-top: 100px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 100px 40px 40px 40px;
 }
 .title{
     width: 100%;
-    display: flex;
-    justify-content: center;
+    display: block ;
+    text-align: center;
     padding-bottom: 15px;
     -webkit-text-stroke: 2px black;
     color: white;
 }
+.content{
+    display: flex;
+    gap: 40px;
+    padding-top: 60px;
+    justify-content: space-between;
+
+    color: white;
+}
+.formGroup{
+    width: 100;
+    height: 100;
+}
+.form{
+    text-align: center;
+    padding: 20px 0px;
+}
+img{
+    border-radius: 30px;
+    width: 40vh;
+    height: auto;
+
+}
+input, textarea{
+    border-radius: 20px;
+    text-align: center;
+    resize:none;
+
+}
+.formControl{
+    margin-top: 10px;
+}
+p{
+    position:static  ;
+
+}
+.submit{
+    transition: all 300ms;
+}
+.submit:hover{
+    background-color: rgb(197, 113, 113);
+}
+@media screen and (max-width: 1094px){
+    .content{
+        display: block;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    input, textarea{
+        width: 100%;
+    }
+    img{
+        width: 40vh;
+        height: auto;
+    }
+};
